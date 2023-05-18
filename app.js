@@ -58,8 +58,8 @@ app.use(cors({
 
 //protecion de rutas
 
-//app.use(expressjwt({secret:jwtKey,algorithms:['HS256']}))
-//   .unless({path:["/"]})
+app.use(expressjwt({secret:jwtKey,algorithms:['HS256']}))
+   .unless({path:["/","/login"]})
 
 
 //declaración de rutas

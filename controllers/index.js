@@ -5,7 +5,7 @@ const User = require('../models/teamMember');
 const config = require('config');
 
 function home(req, res, next){
-    res.render('index', {title: 'Express'});
+    res.render('index', {title: 'SCRUM Proyect'});
 }
 
 function login(req, res, next){
